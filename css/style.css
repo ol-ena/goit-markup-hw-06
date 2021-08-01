@@ -179,14 +179,15 @@ body {
 
 .visually-hidden {
     position: absolute !important;
-    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px 1px 1px 1px);
+    /* IE6, IE7 */
     clip: rect(1px, 1px, 1px, 1px);
     padding: 0 !important;
     border: 0 !important;
     height: 1px !important;
     width: 1px !important;
     overflow: hidden;
-  }
+}
 
 .modal-btn {
     cursor: pointer;
@@ -557,6 +558,85 @@ address {
     height: 20px;
 }
 
+
+.footer-form-section {
+    margin-left: 93px;
+    margin-top: 72px;
+    margin-bottom: 100px;
+    width: 570px;
+    height: 86px;
+}
+
+.footer-form-send{
+    display: flex;
+}
+
+.footer-form-header {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--some-txt-color);
+    margin-bottom: 20px;
+}
+
+.footer-form-input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-sizing: border-box;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+    cursor: pointer;
+    padding-left: 16px;
+    background-color:inherit;
+    color: var(--some-txt-color);
+}
+
+.footer-form-input:focus {
+    outline: none;
+    /*border-color: var(--accent-color);*/
+}
+
+.footer-form-input::placeholder {
+    color: rgba(117 167 117 0.5);
+}
+
+
+.footer-form-btn {
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    width: 200px;
+    height: 50px;
+    letter-spacing: 0.06em;
+    color: var(--some-txt-color);
+    background: var(--accent-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border: none;
+    border-radius: 4px;
+    font-family: var(--main-font);
+    padding: 10px 32px;
+    border: none;
+    margin-left: auto;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
+    display: flex;
+}
+
+.footer-form-btn:hover, .footer-form-btn:focus {
+    background-color: #188ce8;
+}
+
+.icon-telegram{
+    width: 24px;
+    height: 24px;
+    margin-left: 10px;
+}
+
+
 /* Modal */
 
 .backdrop {
@@ -566,7 +646,8 @@ address {
     width: 100vw;
     height: 100vh;
     background-color: rgba(0, 0, 0, 0.07);
-    transition: opacity 250ms linear;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
 }
 
 .is-hidden {
@@ -592,23 +673,8 @@ address {
     top: 8px;
     padding: 0;
     border: 0;
-    
 }
 
-.icon-close {
-    width: 18px;
-    height: 18px;
-    border: 1px solid rgba(33, 33, 33, 0.1);
-    box-sizing: border-box;
-    border-radius: 50%;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    transition-duration: 250ms;
-}
-.icon-close:focus, .icon-close:hover
- {
-    fill: var(--accent-color);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
 
 .icon-close {
     cursor: pointer;
@@ -617,8 +683,17 @@ address {
     padding: 0;
     width: 30px;
     height: 30px;
+    box-sizing: border-box;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 250ms;
     visibility: visible;
-   
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+}
+.icon-close:focus, .icon-close:hover {
+    fill: var(--accent-color);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+
 }
 
 /* Modal form */
@@ -657,7 +732,6 @@ address {
     font-weight: 400;
     margin-bottom: 10px;
     position: relative;
-   
 }
 
 .modal-form-icon {
@@ -687,7 +761,6 @@ address {
 }
 
 .modal-form-message {
-    
     margin-top: 6px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -725,13 +798,14 @@ address {
     border: 2px solid #212121;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 2px;
+    
 }
 
-.modal-form-checkbox:checked + .modal-form-checkbox-label::before {
+.modal-form-checkbox:checked+.modal-form-checkbox-label::before {
     /*background-image:url(.images/sprite.svg#icon-icon-check);*/
-    background-image:url("../images/iconcheck.jpg");
+    background-image: url("../images/iconcheck.jpg");
     background-size: cover;
-    border:none;
+    border: none;
     box-shadow: none;
 }
 
@@ -764,6 +838,8 @@ address {
     letter-spacing: 0.06em;
     border: none;
 }
+
+
 
 /* PORTFOLIO*/
 
