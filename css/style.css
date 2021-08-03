@@ -239,7 +239,7 @@ body {
 }
 
 .our-adv-list-header {
-    font-weight: 900;
+    font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.03em;
@@ -560,7 +560,7 @@ address {
 
 
 .footer-form-section {
-    margin-left: 93px;
+    margin-left: auto;
     margin-top: 72px;
     margin-bottom: 100px;
     width: 570px;
@@ -728,7 +728,7 @@ address {
 }
 
 .modal-form-field {
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     margin-bottom: 10px;
     position: relative;
@@ -777,7 +777,6 @@ address {
 }
 
 .modal-form-message::placeholder {
-    text-transform: uppercase;
     color: rgba(117 167 117 0.5);
 }
 
